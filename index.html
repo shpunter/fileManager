@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script src="MVC.js"></script>
+    <script src="main.js"></script>
+    <title></title>
+
+    <style>
+        .checkbox {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<p id="folder">
+    folder path
+</p>
+
+<button type="button" class="btn btn-primary" id="del">Delete</button>
+<button type="button" class="btn btn-primary" id="rename">Rename</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalFolder">Create folder</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalFile">Create file</button>
+
+<div id='result'></div>
+
+<button type="button" class="btn btn-primary" id="save">Save</button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModalFolder" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Create folder</h4>
+                </div>
+                <div class="modal-body">
+                    <input type="text" class="form-control" id="textFolder">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="createFolder">ADD</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModalFile" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Create file</h4>
+            </div>
+            <div class="modal-body">
+                <input type="text" class="form-control" id="textFile">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="createFile">ADD</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+</html>
